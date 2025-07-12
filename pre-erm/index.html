@@ -51,19 +51,7 @@
     }
   });
 </script>
-    
-<script>
-  window.addEventListener('DOMContentLoaded', function () {
-    // Verifica se os eventos já foram disparados neste navegador
-    if (!localStorage.getItem('eventsSent')) {
-      fbq('trackSingle', '1370007604299039', 'Subscribe');
-      fbq('trackSingle', '1370007604299039', 'Purchase', {value: 0.00, currency: 'USD'});
 
-      // Marca como enviado
-      localStorage.setItem('eventsSent', 'true');
-    }
-  });
-</script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HGW5W2SEB"></script>
 <script>
