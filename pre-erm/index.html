@@ -24,6 +24,22 @@
   fbq('init', '1370007604299039');
 </script>
 
+    
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    // Envia webhook para o Pushcut
+    fetch('https://api.pushcut.io/XU0mKhe7IMdVUntvIFhru/notifications/+1%20Baianinho');
+
+    // Verifica se os eventos já foram disparados neste navegador
+    if (!localStorage.getItem('eventsSent')) {
+      fbq('trackSingle', '1370007604299039', 'Purchase', {value: 497.90, currency: 'USD'});
+
+      // Marca como enviado
+      localStorage.setItem('eventsSent', 'true');
+    }
+  });
+</script>
+    
 <script>
   window.addEventListener('DOMContentLoaded', function () {
     // Verifica se os eventos já foram disparados neste navegador
