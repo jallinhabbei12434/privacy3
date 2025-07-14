@@ -23,27 +23,13 @@
 
     fbq('init', '1736289453671998');
   </script>
-<!-- PUSHCHUT NUMERO ENTROU -->
-<script>
-  window.addEventListener('DOMContentLoaded', function () {
-    // Envia webhook para o Pushcut
-    fetch('https://api.pushcut.io/H09YNe2fdHovD4sa87ZUi/notifications/CONECTADOZAPI');
 
-    // Verifica se os eventos já foram disparados neste navegador
-    if (!localStorage.getItem('eventsSent')) {
-      fbq('trackSingle', '1736289453671998', 'Purchase', {value: 0.00, currency: 'USD'});
-
-      // Marca como enviado
-      localStorage.setItem('eventsSent', 'true');
-    }
-  });
-</script>
   <script>
     window.addEventListener('DOMContentLoaded', function () {
       // Verifica se os eventos já foram disparados neste navegador
       if (!localStorage.getItem('eventsSent')) {
         fbq('trackSingle', '1736289453671998', 'Subscribe');
-        fbq('trackSingle', '1736289453671998', 'Purchase', {value: 0.00, currency: 'USD'});
+        fbq('trackSingle', '1736289453671998', 'Purchase', {value: 1.00, currency: 'USD'});
 
         // Marca como enviado
         localStorage.setItem('eventsSent', 'true');
