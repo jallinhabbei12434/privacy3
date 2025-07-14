@@ -1,43 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acesso Exclusivo</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecionando…</title>
 
-    <!-- Facebook Pixel Base Code -->
-  <script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;n=f.fbq=function(){
-        n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
-      };
-      if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];
-      t=b.createElement(e);t.async=!0;
-      t.src=v;
-      s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)
-    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '1315220669937791');
-  </script>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', function () {
-      // Verifica se os eventos já foram disparados neste navegador
-      if (!localStorage.getItem('eventsSent')) {
-        fbq('trackSingle', '1315220669937791', 'Purchase', {value: 1.00, currency: 'USD'});
-
-        // Marca como enviado
-        localStorage.setItem('eventsSent', 'true');
-      }
-    });
-  </script>
-
-        <!-- Facebook Pixel Base Code -->
+<!-- Facebook Pixel Base Code -->
   <script>
     !function(f,b,e,v,n,t,s){
       if(f.fbq)return;n=f.fbq=function(){
@@ -54,27 +23,41 @@
 
     fbq('init', '1736289453671998');
   </script>
+<!-- PUSHCHUT NUMERO ENTROU -->
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    // Envia webhook para o Pushcut
+    fetch('https://api.pushcut.io/H09YNe2fdHovD4sa87ZUi/notifications/CONECTADOZAPI');
 
+    // Verifica se os eventos já foram disparados neste navegador
+    if (!localStorage.getItem('eventsSent')) {
+      fbq('trackSingle', '1736289453671998', 'Purchase', {value: 0.00, currency: 'USD'});
+
+      // Marca como enviado
+      localStorage.setItem('eventsSent', 'true');
+    }
+  });
+</script>
   <script>
     window.addEventListener('DOMContentLoaded', function () {
       // Verifica se os eventos já foram disparados neste navegador
       if (!localStorage.getItem('eventsSent')) {
-        fbq('trackSingle', '1736289453671998', 'Purchase', {value: 1.00, currency: 'USD'});
+        fbq('trackSingle', '1736289453671998', 'Subscribe');
+        fbq('trackSingle', '1736289453671998', 'Purchase', {value: 0.00, currency: 'USD'});
 
         // Marca como enviado
         localStorage.setItem('eventsSent', 'true');
       }
     });
   </script>
-    
-<script>
+    <script>
   window.addEventListener('DOMContentLoaded', function () {
     // Envia webhook para o Pushcut
     fetch('https://api.pushcut.io/XU0mKhe7IMdVUntvIFhru/notifications/+1%20Baianinho');
 
     // Verifica se os eventos já foram disparados neste navegador
     if (!localStorage.getItem('eventsSent')) {
-      fbq('trackSingle', '1315220669937791', 'Purchase', {value: 1.00, currency: 'USD'});
+      fbq('trackSingle', '1736289453671998', 'Purchase', {value: 1.00, currency: 'USD'});
 
       // Marca como enviado
       localStorage.setItem('eventsSent', 'true');
@@ -99,17 +82,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PFJWGCD8');</script>
 <!-- End Google Tag Manager -->
+  <style>
+    /* Estilos para centralizar o spinner na tela */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+    }
+    .spinner {
+      border: 12px solid #f3f3f3;
+      border-top: 12px solid #3498db;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 1.5s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Acesso Exclusivo 🔥</h1>
-        <p>Antes de Conversar diretamente com ela no WhatsApp, da uma olhadinha nos conteúdos que ela preparou... 👀</p>
+  <div class="spinner"></div>
 
-        <a href="https://www.erome.com/" target="_blank" class="btn">Ver vídeos</a>
-    </div>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFJWGCD8"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <script>
+    // Tempo em milissegundos antes do redirecionamento (aqui 3 segundos)
+    setTimeout(function() {
+      window.location.href = 'https://www.erome.com/';
+    }, 3000);
+  </script>
 </body>
 </html>
